@@ -18,7 +18,7 @@ module.exports.getUser = async(req,res)=>{
     res.status(200).json({data : newUser})
     
 }
-module.exports.getUser = async(req,res)=>{
+module.exports.getUserbyid = async(req,res)=>{
 
     const newUser = await User.findOne({
         where :{
